@@ -1,0 +1,20 @@
+{
+  "name": "bitcoinjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -r . --standalone bitcoinjs > bitcoinjs.js && uglifyjs -c --mangle reserved=['BigInteger','ECPair','Point'] bitcoinjs.js > bitcoinjs.min.js && rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "bigi": "^1.4.2",
+    "bitcoinjs-lib": "^5.2.0",
+    "browserify": "^17.0.0",
+    "rollup": "^2.58.0",
+    "uglify-es": "^3.3.9"
+  }
+}
