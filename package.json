@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -r . --standalone bitcoinjs > bitcoinjs.js && uglifyjs -c --mangle reserved=['BigInteger','ECPair','Point'] bitcoinjs.js > bitcoinjs.min.js && rollup -c"
+    "build": "browserify -r . --standalone bitcoinjs > bitcoin.js && uglifyjs -c --mangle reserved=['BigInteger','ECPair','Point'] bitcoin.js > bitcoin.min.js && rollup -c"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@rollup/plugin-commonjs": "^21.0.0",
     "bip32": "^2.0.6",
     "bip38": "^3.1.1",
     "bip39": "^3.0.4",
@@ -23,6 +22,7 @@
     "uglify-es": "^3.3.9"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
     "rollup-plugin-terser": "^7.0.2"
   }
 }

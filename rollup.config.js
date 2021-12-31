@@ -7,12 +7,12 @@ export default [{
         file: 'output/bitcoin.mjs',
         format: 'esm'
     },
-    plugins: [commonjs()]
+    plugins: []
 }, {
     input: './bitcoinjs.js',
     output: {
         file: 'output/bitcoin.min.mjs',
         format: 'esm'
     },
-    plugins: [commonjs(), terser()]
+    plugins: [terser()]
 }];
