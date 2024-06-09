@@ -42766,7 +42766,7 @@ AES.prototype.scrub = function () {
 
 module.exports.AES = AES;
 
-},{"safe-buffer":307}],119:[function(require,module,exports){
+},{"safe-buffer":308}],119:[function(require,module,exports){
 var aes = require('./aes');
 var Buffer = require('safe-buffer').Buffer;
 var Transform = require('cipher-base');
@@ -42885,7 +42885,7 @@ StreamCipher.prototype.setAAD = function setAAD (buf) {
 
 module.exports = StreamCipher;
 
-},{"./aes":118,"./ghash":123,"./incr32":124,"buffer-xor":152,"cipher-base":157,"inherits":249,"safe-buffer":307}],120:[function(require,module,exports){
+},{"./aes":118,"./ghash":123,"./incr32":124,"buffer-xor":152,"cipher-base":157,"inherits":249,"safe-buffer":308}],120:[function(require,module,exports){
 var ciphers = require('./encrypter');
 var deciphers = require('./decrypter');
 var modes = require('./modes/list.json');
@@ -43026,7 +43026,7 @@ function createDecipher (suite, password) {
 exports.createDecipher = createDecipher;
 exports.createDecipheriv = createDecipheriv;
 
-},{"./aes":118,"./authCipher":119,"./modes":131,"./streamCipher":134,"cipher-base":157,"evp_bytestokey":223,"inherits":249,"safe-buffer":307}],122:[function(require,module,exports){
+},{"./aes":118,"./authCipher":119,"./modes":131,"./streamCipher":134,"cipher-base":157,"evp_bytestokey":223,"inherits":249,"safe-buffer":308}],122:[function(require,module,exports){
 var MODES = require('./modes');
 var AuthCipher = require('./authCipher');
 var Buffer = require('safe-buffer').Buffer;
@@ -43142,7 +43142,7 @@ function createCipher (suite, password) {
 exports.createCipheriv = createCipheriv;
 exports.createCipher = createCipher;
 
-},{"./aes":118,"./authCipher":119,"./modes":131,"./streamCipher":134,"cipher-base":157,"evp_bytestokey":223,"inherits":249,"safe-buffer":307}],123:[function(require,module,exports){
+},{"./aes":118,"./authCipher":119,"./modes":131,"./streamCipher":134,"cipher-base":157,"evp_bytestokey":223,"inherits":249,"safe-buffer":308}],123:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer;
 var ZEROES = Buffer.alloc(16, 0);
 
@@ -43233,7 +43233,7 @@ GHASH.prototype.final = function (abl, bl) {
 
 module.exports = GHASH;
 
-},{"safe-buffer":307}],124:[function(require,module,exports){
+},{"safe-buffer":308}],124:[function(require,module,exports){
 function incr32 (iv) {
   var len = iv.length;
   var item;
@@ -43304,7 +43304,7 @@ exports.encrypt = function (self, data, decrypt) {
   return out
 };
 
-},{"buffer-xor":152,"safe-buffer":307}],127:[function(require,module,exports){
+},{"buffer-xor":152,"safe-buffer":308}],127:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer;
 
 function encryptByte (self, byteParam, decrypt) {
@@ -43348,7 +43348,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 };
 
-},{"safe-buffer":307}],128:[function(require,module,exports){
+},{"safe-buffer":308}],128:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer;
 
 function encryptByte (self, byteParam, decrypt) {
@@ -43375,7 +43375,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 };
 
-},{"safe-buffer":307}],129:[function(require,module,exports){
+},{"safe-buffer":308}],129:[function(require,module,exports){
 var xor = require('buffer-xor');
 var Buffer = require('safe-buffer').Buffer;
 var incr32 = require('../incr32');
@@ -43407,7 +43407,7 @@ exports.encrypt = function (self, chunk) {
   return xor(chunk, pad)
 };
 
-},{"../incr32":124,"buffer-xor":152,"safe-buffer":307}],130:[function(require,module,exports){
+},{"../incr32":124,"buffer-xor":152,"safe-buffer":308}],130:[function(require,module,exports){
 exports.encrypt = function (self, block) {
   return self._cipher.encryptBlock(block)
 };
@@ -43678,7 +43678,7 @@ StreamCipher.prototype._final = function () {
 
 module.exports = StreamCipher;
 
-},{"./aes":118,"cipher-base":157,"inherits":249,"safe-buffer":307}],135:[function(require,module,exports){
+},{"./aes":118,"cipher-base":157,"inherits":249,"safe-buffer":308}],135:[function(require,module,exports){
 var DES = require('browserify-des');
 var aes = require('browserify-aes/browser');
 var aesModes = require('browserify-aes/modes');
@@ -48751,7 +48751,7 @@ Point.prototype.toString = function () {
 
 module.exports = Point;
 
-},{"assert":26,"bigi":34,"safe-buffer":307}],182:[function(require,module,exports){
+},{"assert":26,"bigi":34,"safe-buffer":308}],182:[function(require,module,exports){
 
 var elliptic = exports;
 
