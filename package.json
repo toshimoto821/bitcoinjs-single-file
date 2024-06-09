@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/bitcoin.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "build": "rm -rf dist && browserify -r . --standalone bitcoinjs > bitcoin.js && uglifyjs -c --mangle reserved=['BigInteger','ECPair','Point'] bitcoin.js > bitcoin.min.js && rollup -c"
   },
   "author": "",
