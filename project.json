@@ -1,0 +1,11 @@
+{
+  "name": "bitcoinjs",
+  "targets": {
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "echo 'No test required'"
+      }
+    }
+  }
+}

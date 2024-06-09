@@ -1,18 +1,21 @@
-import commonjs from '@rollup/plugin-commonjs';
-import { terser } from "rollup-plugin-terser";
+const commonjs = require("@rollup/plugin-commonjs");
+const { terser } = require("rollup-plugin-terser");
 
-export default [{
-    input: './bitcoin.js',
+module.exports = [
+  {
+    input: "./bitcoin.js",
     output: {
-        file: 'output/bitcoin.mjs',
-        format: 'esm'
+      file: "dist/bitcoin.mjs",
+      format: "esm",
     },
-    plugins: [commonjs()]
-}, {
-    input: './bitcoin.js',
+    plugins: [commonjs()],
+  },
+  {
+    input: "./bitcoin.js",
     output: {
-        file: 'output/bitcoin.min.mjs',
-        format: 'esm'
+      file: "dist/bitcoin.min.mjs",
+      format: "esm",
     },
-    plugins: [commonjs(), terser()]
-}];
+    plugins: [commonjs(), terser()],
+  },
+];
