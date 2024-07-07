@@ -2,14 +2,15 @@
   "name": "@toshimoto821/bitcoinjs",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bitcoin.mjs",
+  "main": "dist/bitcoin.min.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "build": "rm -rf dist && browserify -r . --standalone bitcoinjs > bitcoin.js && uglifyjs -c --mangle reserved=['BigInteger','ECPair','Point'] bitcoin.js > bitcoin.min.js && rollup -c"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "bip32": "^2.0.6",
     "bip38": "^3.1.1",
     "bip39": "^3.0.4",
@@ -17,12 +18,8 @@
     "bitcoinjs-message": "^2.2.0",
     "browserify": "^17.0.0",
     "eccrypto": "^1.1.6",
-    "i": "^0.3.7",
-    "npm": "^8.2.0",
     "rollup": "^4.15.0",
-    "uglify-es": "^3.3.9"
-  },
-  "devDependencies": {
+    "uglify-es": "^3.3.9",
     "@rollup/plugin-commonjs": "^21.0.1",
     "rollup-plugin-terser": "^7.0.2"
   },
