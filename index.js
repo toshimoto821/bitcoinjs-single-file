@@ -6,4 +6,5 @@ bitcoin_js.bip32 = require("bip32");
 bitcoin_js.message = require('bitcoinjs-message');
 bitcoin_js.eccrypto = require('eccrypto');
 bitcoin_js.node_crypto = require('crypto');
+bitcoin_js.bs58check = require('bs58check');
 module.exports = bitcoin_js;

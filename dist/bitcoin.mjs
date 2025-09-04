@@ -60387,9 +60387,10 @@ bitcoin_js.bip32 = require("bip32");
 bitcoin_js.message = require('bitcoinjs-message');
 bitcoin_js.eccrypto = require('eccrypto');
 bitcoin_js.node_crypto = require('crypto');
+bitcoin_js.bs58check = require('bs58check');
 module.exports = bitcoin_js;
 
-},{"bip32":52,"bip38":53,"bip39":55,"bitcoinjs-lib":72,"bitcoinjs-message":92,"crypto":154,"eccrypto":166,"safe-buffer":252}]},{},[])("/")
+},{"bip32":52,"bip38":53,"bip39":55,"bitcoinjs-lib":72,"bitcoinjs-message":92,"bs58check":142,"crypto":154,"eccrypto":166,"safe-buffer":252}]},{},[])("/")
 });
 }(bitcoin$1));
 
